@@ -2,14 +2,17 @@ package com.example.providers;
 
 import com.example.service.currencyExchange;
 
-public class dollarSek implements currencyExchange {
+public class GBP implements currencyExchange {
+
     @Override
     public double convert (double value){
-        return value * 10.89;
+        double result = value * 0.074;
+        result = Math.round(result * 100.0)/100.0;
+        return result;
     }
 
     @Override
     public String getCurrencyName(){
-        return "Dollar";
+        return "GBP";
     }
 }

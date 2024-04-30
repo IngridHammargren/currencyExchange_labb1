@@ -1,2 +1,7 @@
-module $MODULE_NAME$ {
+import com.example.service.currencyExchange;
+
+module consumer {
+    requires service;
+    uses currencyExchange;
+
 }

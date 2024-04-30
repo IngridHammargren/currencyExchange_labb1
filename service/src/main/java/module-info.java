@@ -1,2 +1,4 @@
-module $MODULE_NAME$ {
+module service {
+    exports com.example.service;
+
 }
